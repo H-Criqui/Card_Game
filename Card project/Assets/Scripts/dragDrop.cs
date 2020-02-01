@@ -6,6 +6,8 @@ public class dragDrop : MonoBehaviour
 {
     private bool isDragging = false;
     private Vector2 startPosition;
+    private bool overDragZone = false;
+    private GameObject dropZone;
 
 
     // Start is called before the first frame update
@@ -23,7 +25,17 @@ public class dragDrop : MonoBehaviour
         }
 
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        overDragZone = true;
+        dropZone = collision.gameObject;
+    }
 
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        overDragZone = false;
+        dropZone = null;
+    }
     public void StartDrag()
     {
         startPosition = transform.position;
@@ -33,5 +45,13 @@ public class dragDrop : MonoBehaviour
     public void endDrag()
     {
         isDragging = false;
+        if (overDragZone)
+        {
+            transform.SetParent(dropZone.transform, false);
+        }
+        else
+        {
+            transform.position = startPosition;
+        }
     }
 }
