@@ -1,0 +1,16 @@
+I want to start off by saying that I really enjoyed this project. It worked incramentally, so I felt accomplished every 15 minutes or so
+when I got to see my newest addition to the project like card generation, random card generation, dragging and dropping, and so forth. 
+I believe that I am starting to get a better feel for unity now. I feel as though I will struggle on my own when using it, but I also feel
+that I will be able to get through that struggle. I'm feeling excited to start with the black jack project. 
+
+I don't think there was any part of this project that I struggled with, as it was following a tutorial. I feel as though that will change
+soon. The on collision and other stuff was interesting and it was nice to know that c# is relatively similar to c++ syntactically. 
+
+I'm realizing the more that I work on this project the more there is to unity than I had originally thought. I knew it had a lot going on, 
+but I never fully realized how much went into just making something move across the screen and interact with only a few things. This project
+has been very eye opening to say the least. I'm excited to code in a full deck of cards using the prefab I created, but am a little nervous
+at how I'm going to get the Images into unity. I feel as though it shouldn't be too hard but I don't really know where to start besides 
+looking it up online. I'm also really interested in figuring out how to give each card its own value to count with, but I feel as though
+unity must have some way of storing values into a game object. Guess I'll just have to figure it out as I go along. 
+
+Hope you are having a nice day. :)
