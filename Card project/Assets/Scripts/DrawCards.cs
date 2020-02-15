@@ -64,6 +64,7 @@ public class DrawCards : MonoBehaviour
     public GameObject card52;
     public GameObject opponent_area;
     public GameObject player_area;
+    public GameObject Hit;
 
     List<GameObject> cards = new List<GameObject>();
 
@@ -128,8 +129,8 @@ public class DrawCards : MonoBehaviour
         winText.text = "";
     }
 
-   
 
+   
     // Update is called once per frame
     void Update()
     {
@@ -137,21 +138,7 @@ public class DrawCards : MonoBehaviour
         {
             winText.text = "Bust!";
         }
-        if(GetComponent<Opponent_Turn>().stayed == true)
-        {
-            if (score > 21)
-            {
-                winText.text = "Bust!";
-            }
-            else if (GetComponent<Opponent_Turn>().Opponent_score <= score)
-            {
-                winText.text = "You Win!";
-            }
-            else
-            {
-                winText.text = "You Lose!";
-            }
-        }
+        
     }
 
 

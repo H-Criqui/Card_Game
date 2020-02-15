@@ -62,10 +62,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Add_1.cs" />
-    <Compile Include="Assets\Opponent_Turn.cs" />
+    <Compile Include="Assets\Bet_add100.cs" />
+    <Compile Include="Assets\Bet_add25.cs" />
+    <Compile Include="Assets\Bet_add50.cs" />
+    <Compile Include="Assets\Reset.cs" />
+    <Compile Include="Assets\Scripts\Add_1.cs" />
     <Compile Include="Assets\Scripts\dragDrop.cs" />
     <Compile Include="Assets\Scripts\DrawCards.cs" />
+    <Compile Include="Assets\Scripts\Opponent_Turn.cs" />
     <Compile Include="Assets\Scripts\score_calculator.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/nopassword/Desktop/Cs211/Card_Game/Card project/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
